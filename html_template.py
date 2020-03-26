@@ -6,4 +6,4 @@ def home():
     return render_template("index.html") #this file should be under templates folder under pwd.
 
 if(__name__=='__main__'):
-    app.run(debug=True)
+    app.run(debug=True, host="localhost", port= 3001)

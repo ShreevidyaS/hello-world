@@ -11,7 +11,7 @@ def hellow():
 def printname(name):
     return f"hello {name}!"
 
-#to redirect to another page if opened a page that is not for the user(say)
+#redirect to another page if opened a page that is not for the user(say)
 @app.route("/admin")
 def admin():
     return redirect(url_for("printname", name="Admin!"))
